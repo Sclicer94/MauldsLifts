@@ -107,6 +107,7 @@
     background-color: #ff6767;
     padding: 1rem 2rem;
     rotate: -5deg;
+    overflow: hidden;
 }
 
 .WGG {
@@ -123,6 +124,10 @@
 
     .WGG{
         font-size: 2rem;
+    }
+
+    .intro{
+        width: 100vw;
     }
 }
 
