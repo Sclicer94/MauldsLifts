@@ -87,7 +87,7 @@
     max-width: 40rem;
     position: relative;
     z-index: 1;
-    left:40vw;
+    left:25vw;
     transition: all .5s ;
 }
 
@@ -117,17 +117,14 @@
 }
 @media screen and (max-width: 800px) {
     quote img{
-        width: 50vw;
+        width: 30vw;
+        left:25%;
     }
 
     .WGG{
         font-size: 2rem;
     }
 }
-
-
-
-
 
 /* Animations */
 
