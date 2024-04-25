@@ -1,0 +1,57 @@
+#workout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 4%;
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+.WObox {
+    position: relative;
+    width: 30vw;
+    margin-bottom:3rem ;
+}
+
+.WObox img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.WObox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .35s ease;
+    background-color: rgba(255, 103, 103, 0.743);
+}
+
+.WObox:hover .overlay {
+    opacity: 1;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    width:80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    #workout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .WObox{
+        width:40vw;
+
+    }
+
+}

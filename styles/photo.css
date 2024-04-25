@@ -1,0 +1,20 @@
+/* Photography styling */
+#photography #ph-img {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#photography #ph-img img {
+    width: 99vw;
+    border-bottom:  2px solid rgb(255, 103, 103);
+}
+
+@media (min-width: 800px) {
+    #photography #ph-img {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #photography #ph-img img {
+        width: 50vw; /* Adjust the width as per your requirement */
+    }
+}

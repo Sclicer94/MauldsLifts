@@ -1,0 +1,154 @@
+/* index styling */
+/* Scrolling Text */
+.s-text, .s-text2{
+    display: flex;
+    position:absolute;
+    z-index: 1;
+}
+
+
+.image-scase .s-text2 img {
+    width: 150%;
+    animation: scroll2 8s linear infinite;
+}
+
+
+.image-scase img{
+    width: 15rem;
+}
+
+
+/* Image grid */
+.image-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+.image-grid img{
+    width:33vw;
+    height: auto;
+    margin-top: 5rem;
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .image-grid {
+        grid-template-columns: 1fr 1fr; /* Display two images side by side */
+    }
+
+    .image-scase .image-grid img{
+        width: 50vw;
+    }
+    
+    .image-grid img:nth-child(3) {
+        display: none; /* Hide the third image */
+    }
+}
+
+.overlay{
+    position:absolute;
+
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url('images/background.jpg');
+    width: 100vw;
+    height: 40vh;
+    background-size: cover;
+
+}
+
+/* Intro */
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    border-top:  3px solid #ff6767;
+    border-bottom: 3px solid rgb(255, 103, 103);
+}
+
+.intro h1{
+    padding: 4rem 2rem;
+
+}
+
+/* Quote */
+.quote {
+    position: relative;
+}
+
+.quote img {
+    margin-top: 3rem;
+    max-width: 40rem;
+    position: relative;
+    z-index: 1;
+    left:40vw;
+    transition: all .5s ;
+}
+
+.quote img:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.quote .WGGscroll {
+    display: flex;
+    gap: 5rem;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(40%);
+    z-index: 0;
+    background-color: #ff6767;
+    padding: 1rem 2rem;
+    rotate: -5deg;
+}
+
+.WGG {
+    color: black;
+    font-size: 4rem;
+    animation: scroll 3s linear infinite;
+
+}
+@media screen and (max-width: 800px) {
+    quote img{
+        width: 50vw;
+    }
+
+    .WGG{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+/* Animations */
+
+@keyframes scroll {
+   0%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+    
+}
+
+@keyframes scroll2 {
+    0%{
+         transform: translateX(-100%);
+     }
+ 
+     100%{
+         transform: translateX(0%);
+     }
+     
+ }
