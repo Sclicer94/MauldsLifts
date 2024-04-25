@@ -1,0 +1,43 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 75vh;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+#contact .socials {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+#contact img {
+    width: 8rem;
+    padding: 2rem;
+    filter: grayscale();
+}
+
+#contact img:hover {
+    filter: none;
+    transition: .25s;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px; /* Adjust the margin as needed */
+}
+
+span {
+    font-size: x-large;
+}
+
+
