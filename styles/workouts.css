@@ -10,12 +10,15 @@
     position: relative;
     width: 30vw;
     margin-bottom:3rem ;
+    max-width: 20rem;
+    margin:1rem 1rem;
 }
 
 .WObox img {
     display: block;
     width: 100%;
     height: auto;
+    
 }
 
 .WObox .overlay {

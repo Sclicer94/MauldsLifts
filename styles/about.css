@@ -1,0 +1,51 @@
+#about{
+    display: flex;
+    align-items: center;
+    margin: 3rem;
+    gap:3rem
+    
+}
+
+#about img{
+    width: 40vw;
+    filter: drop-shadow(20px 10px 5px #ff6767cc);
+    border-radius: 1rem;
+    border:3px solid #fa9090a5
+}
+
+#about p{
+    background-color: #ff6767cc;
+
+
+    color:white;
+    padding: 5rem 2rem;
+    height:auto;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width:800px){
+    #about{
+        flex-direction: column;
+        align-items: center;
+        margin:1rem 5vw;
+        background-image: url("resources/Images/aboutme.png");
+        /* You may need to adjust background properties like background-size, background-repeat, etc. */
+        background-size: cover; /* or contain, depending on your preference */
+        background-position: center; /* adjust as needed */
+    }
+
+    #about img{
+        width: 40vw;
+        margin-bottom: 2rem;
+
+    }
+
+    #about p{
+        font-size: large;
+        padding: 2rem 3rem;
+        
+    }
+
+    
+
+}
